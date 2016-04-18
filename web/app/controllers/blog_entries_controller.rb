@@ -5,11 +5,13 @@ class BlogEntriesController < ApplicationController
   # GET /blog_entries.json
   def index
     @blog_entries = BlogEntry.all
+    render json:@blog_entries
   end
 
   # GET /blog_entries/1
   # GET /blog_entries/1.json
   def show
+    render json:@blog_entries
   end
 
   # GET /blog_entries/new
